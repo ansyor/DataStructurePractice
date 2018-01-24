@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4EA6C14200C6A460074718F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4EA6C13200C6A460074718F /* main.cpp */; };
+		F4AAF48B2016F06000FC6938 /* LinkedList3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4AAF48A2016F06000FC6938 /* LinkedList3.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F42256D4201049B00011AF85 /* LinkedList2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList2.cpp; sourceTree = "<group>"; };
+		F42256D620118E530011AF85 /* Stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stack.cpp; sourceTree = "<group>"; };
+		F4AAF4882016DFCA00FC6938 /* Queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
+		F4AAF48A2016F06000FC6938 /* LinkedList3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList3.cpp; sourceTree = "<group>"; };
 		F4EA6C10200C6A460074718F /* DataStructurePractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructurePractice; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4EA6C13200C6A460074718F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F4EA6C13200C6A460074718F /* LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,11 @@
 		F4EA6C12200C6A460074718F /* DataStructurePractice */ = {
 			isa = PBXGroup;
 			children = (
-				F4EA6C13200C6A460074718F /* main.cpp */,
+				F4EA6C13200C6A460074718F /* LinkedList.cpp */,
+				F42256D4201049B00011AF85 /* LinkedList2.cpp */,
+				F42256D620118E530011AF85 /* Stack.cpp */,
+				F4AAF4882016DFCA00FC6938 /* Queue.cpp */,
+				F4AAF48A2016F06000FC6938 /* LinkedList3.cpp */,
 			);
 			path = DataStructurePractice;
 			sourceTree = "<group>";
@@ -119,7 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4EA6C14200C6A460074718F /* main.cpp in Sources */,
+				F4AAF48B2016F06000FC6938 /* LinkedList3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +256,7 @@
 				F4EA6C19200C6A460074718F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
