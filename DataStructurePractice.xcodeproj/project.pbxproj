@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4AAF48B2016F06000FC6938 /* LinkedList3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4AAF48A2016F06000FC6938 /* LinkedList3.cpp */; };
+		F4C33079201984DA00522F4C /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4C33078201984DA00522F4C /* BinaryTree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +27,7 @@
 		F42256D620118E530011AF85 /* Stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stack.cpp; sourceTree = "<group>"; };
 		F4AAF4882016DFCA00FC6938 /* Queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
 		F4AAF48A2016F06000FC6938 /* LinkedList3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList3.cpp; sourceTree = "<group>"; };
+		F4C33078201984DA00522F4C /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
 		F4EA6C10200C6A460074718F /* DataStructurePractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructurePractice; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EA6C13200C6A460074718F /* LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +67,7 @@
 				F42256D620118E530011AF85 /* Stack.cpp */,
 				F4AAF4882016DFCA00FC6938 /* Queue.cpp */,
 				F4AAF48A2016F06000FC6938 /* LinkedList3.cpp */,
+				F4C33078201984DA00522F4C /* BinaryTree.cpp */,
 			);
 			path = DataStructurePractice;
 			sourceTree = "<group>";
@@ -127,7 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4AAF48B2016F06000FC6938 /* LinkedList3.cpp in Sources */,
+				F4C33079201984DA00522F4C /* BinaryTree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
