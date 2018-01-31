@@ -36,7 +36,12 @@ public:
 	void insert(int value);
 	void insert(Node *node, int value);
 	
+	Node *deleteNode(Node *node, int value);
+	
 	Node *root;
+	
+private:
+	Node *findMin(Node *node);
 };
 
 BinaryTree::BinaryTree() {
@@ -89,6 +94,59 @@ void BinaryTree::insert(Node *node, int value) {
 	}
 }
 
+Node* BinaryTree::deleteNode(Node *node, int value) {
+	
+	if (node == nullptr) {
+		return node;
+	}
+	else if (value < node->value) {
+		node->left = deleteNode(node->left, value);
+	}
+	else if (value > node->value) {
+		node->right = deleteNode(node->right, value);
+	} else {
+		
+		if (node->left == nullptr && node->right ==  nullptr) {
+			delete node;
+			node = nullptr;
+		} else if (node->left == nullptr) {
+			
+			Node *temp = node;
+			node = node->right;
+			
+			delete temp;
+			
+		} else if (node->right == nullptr) {
+			
+			Node *temp = node;
+			node = node->left;
+			
+			delete temp;
+			
+		} else {
+			
+			Node *temp = findMin(node->right);
+			node->value = temp->value;
+			node->right = deleteNode(node->right, temp->value);
+		}
+		
+	}
+	
+	return node;
+	
+}
+
+Node* BinaryTree::findMin(Node* node) {
+	
+	Node *toFind = node;
+	
+	while (toFind->left != nullptr) {
+		toFind = toFind->left;
+	}
+	
+	return toFind;
+}
+
 int main() {
 	
 	BinaryTree *tree = new BinaryTree();
@@ -96,8 +154,17 @@ int main() {
 	tree->insert(5);
 	tree->insert(10);
 	tree->insert(20);
+	tree->insert(7);
 	
 	cout << tree->root->value << endl;
 	cout << tree->root->right->value << endl;
 	cout << tree->root->right->right->value << endl;
+	cout << tree->root->right->left->value << endl;
+	
+	tree->deleteNode(tree->root, 10);
+	
+	cout << "after delete" << endl;
+	
+	cout << tree->root->value << endl;
+	cout << tree->root->right->value << endl;
 }
